@@ -17,7 +17,7 @@ A much simpler and potentially more accurate approach using Google's Gemini AI t
 
 ### 1. **Install Dependencies**
 ```bash
-pip install -r requirements_gemini.txt
+pip install -r requirements.txt
 ```
 
 ### 2. **Get Gemini API Key**
@@ -27,7 +27,7 @@ pip install -r requirements_gemini.txt
 
 ### 3. **Run the App**
 ```bash
-streamlit run gemini_app.py
+streamlit run app.py
 ```
 
 ### 4. **Enter API Key**
@@ -69,21 +69,6 @@ The AI provides structured results like:
 }
 ```
 
-## 💡 **When to Use Each Approach**
-
-### **Use Gemini AI When:**
-- ✅ You want quick, accurate results
-- ✅ You have internet connection
-- ✅ You prefer low maintenance
-- ✅ You want detailed explanations
-- ✅ You're okay with API usage costs (very minimal)
-
-### **Use Traditional CV When:**
-- ✅ You need offline operation
-- ✅ You want complete control over algorithms
-- ✅ You have specific custom requirements
-- ✅ You prefer no external dependencies
-
 ## 🔧 **Customization**
 
 You can easily modify the AI prompt to:
@@ -102,21 +87,6 @@ Include safety recommendations if levels are high.
 """
 ```
 
-## 💰 **Cost Considerations**
-
-Gemini API pricing (as of 2024):
-- **Free Tier**: 15 requests/minute, 1500 requests/day
-- **Paid Tier**: $0.00025 per image (very affordable)
-
-For typical usage, the free tier is more than sufficient.
-
-## 🛡️ **Privacy & Security**
-
-- Images are processed by Google's servers
-- No data is stored permanently
-- Follow your organization's data policies
-- Consider on-premise solutions for sensitive data
-
 ## 🎯 **Best Practices**
 
 1. **Image Quality**: Use clear, well-lit photos
@@ -125,26 +95,12 @@ For typical usage, the free tier is more than sufficient.
 4. **Validation**: Cross-check critical results manually
 5. **Backup**: Consider offline fallback for critical applications
 
-## 🔄 **Migration Guide**
-
-To switch from traditional CV to Gemini:
-
-1. **Backup** your existing predictions
-2. **Install** Gemini requirements
-3. **Get** API key from Google AI Studio
-4. **Run** `gemini_app.py` instead of `app.py`
-5. **Test** with your existing images
-
 ## 🐛 **Troubleshooting**
 
 ### **"Invalid API Key"**
 - Check you copied the full key
 - Ensure API key is active
 - Try regenerating the key
-
-### **"Quota Exceeded"**
-- You've hit the free tier limit
-- Wait for reset or upgrade to paid tier
 
 ### **"Low Confidence Results"**
 - Improve image lighting
@@ -159,7 +115,3 @@ Potential improvements with Gemini:
 - **Trend analysis with recommendations**
 - **Integration with lab systems**
 - **Real-time video analysis**
-
----
-
-**The Gemini approach offers a much simpler, more maintainable solution with potentially better accuracy. Perfect for most use cases where internet connectivity is available!**
